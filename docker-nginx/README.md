@@ -18,6 +18,7 @@ web
 
 #### 使用说明
 运行：docker-compose up -d   
+进入容器：docker exec -it docker-nginx /bin/sh
 
 
 #### 如何添加一个新项目
