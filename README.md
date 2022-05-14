@@ -1,5 +1,3 @@
-# 🚄🚄🚄用docker给你打包好的开发环境
-
 
 
 ### 为什么折腾这玩意？
@@ -16,9 +14,12 @@
 
 #### 1. 下载基础项目 docker-common
 起哄的靓仔们：说好的一键运行？？？  
-那是不是至少得克隆下项目，不然对着空气？想屁吃
+那是不是至少得克隆下项目，不然对着空气？想屁吃   
+厚脸皮求个星星
 
-[项目地址](https://gitee.com/wujr1532/docker-common)
+[github仓库](https://github.com/wujianrong/docker-common)   
+
+[gitee仓库](https://gitee.com/wujr1532/docker-common)
 
 
 
@@ -77,5 +78,4 @@ docker-compose up -d
 
 #### 3. 偷懒
 因为偷懒，文章只对nginx的使用进行介绍，其他环境的使用在目录下有对用的README.md文件介绍，有疑问的可以找我哟
-
 
