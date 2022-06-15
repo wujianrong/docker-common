@@ -1,0 +1,15 @@
+version: '3'
+services:
+    web:
+        build: 
+            context: ./
+        container_name: docker-node-dev
+        volumes:
+            - ".:/src"
+        working_dir: /src
+        ports:
+            - "8080:8080"
+        environment:
+            NODE_ENV: development
+        command: /bin/sh -c "npm install && npm run serve"
+        # restart: always
