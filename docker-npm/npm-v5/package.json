@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint-plugin-vue": "^9.5.1"
+    "buffer": "^6.0.3"
   }
 }

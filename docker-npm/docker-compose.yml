@@ -1,29 +1,31 @@
 version: '3'
 services:
     npmv1:
-        image: node:14-alpine 
         container_name: npmv1
+        build: 
+            context:  ./
+            dockerfile:  Dockerfilev1
         volumes:
             - "./npm-v1/:/var/www/npm-v1"
-        working_dir: /var/www
+        working_dir: /var/www/npm-v1
         environment:
             NODE_ENV: development
-        command: /bin/sh -c "while true; do echo hello world; sleep 1; done"
+        command: /bin/sh -c "while true; do echo hello world; sleep 100; done"
     npmv3:
-        image: node:14-alpine 
+        image: node:7.10.1-alpine
         container_name: npmv3
         volumes:
             - "./npm-v3/:/var/www/npm-v3"
-        working_dir: /var/www
+        working_dir: /var/www/npm-v3
         environment:
             NODE_ENV: development
-        command: /bin/sh -c "while true; do echo hello world; sleep 1; done"
+        command: /bin/sh -c "while true; do echo hello world; sleep 100; done"
     npmv5:
-        image: node:14-alpine 
+        image: node:14-alpine
         container_name: npmv5
         volumes:
             - "./npm-v5/:/var/www/npm-v5"
-        working_dir: /var/www
+        working_dir: /var/www/npm-v5
         environment:
             NODE_ENV: development
-        command: /bin/sh -c "while true; do echo hello world; sleep 1; done"
+        command: /bin/sh -c "while true; do echo hello world; sleep 100; done"

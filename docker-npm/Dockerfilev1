@@ -1,0 +1,6 @@
+FROM node:14-alpine 
+
+RUN \
+npm install -g npm@2.15.12
+
+
