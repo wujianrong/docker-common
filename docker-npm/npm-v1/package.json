@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "buffer": "^6.0.3"
+    "fms-test-aaa": "^1.0.2",
+    "fms-test-bbb": "^1.0.0"
   }
 }

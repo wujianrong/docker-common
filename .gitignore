@@ -1,3 +1,4 @@
 docker-mongodb/data/*
 docker-mysql/data/*
 docker-redis/data/*
+node_modules
