@@ -1,0 +1,15 @@
+version: '3'
+services:
+    mysqldb:
+        image: mcr.microsoft.com/mssql/server:latest
+        container_name: docker-mssql
+        restart: always
+        env_file:
+            - ".env"
+        environment:
+            - SA_PASSWORD=${MSSQL_PASSWORD}
+            - ACCEPT_EULA=Y
+        ports:
+            - "1433:1433"
+        volumes:
+            - "./data/db/mssql:/var/opt/mssql/data"
